@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+      <title>Worm Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+
+  </head>
+
+  <body>
+      <!-- Title and info -->
+    <header>
+        <h1>Welcome to Worm!</h1>
+        <p>Press start and use arrow keys to move the worm :)</p>
+    </header>
+    
+    <div class="worm-app">
+        <!-- Time and button -->
+        <div class="time-container">
+            <h2 id="time-display">0</h2>
+            
+            <button id="start-button">Start</button>
+        </div>
+        <!-- Game board -->
+        <div class="game-container">
+            <canvas id="wormboard" width="400" height="400"></canvas>
+        </div>
+        <!-- Game score -->
+        <div class="score-container">
+            <h2 id="score">0</h2>
+            <h3>Score</h3>
+        </div>
+    
+    </div>
+    <!-- Higscore -->
+    <div class="yourHighscore">
+        <h3>Highscore:</h3>
+        <h3 id="highscore">0</h3>
+    </div>
+  
+</body>
+    <!-- Javascript -->
+  <script src="app.js"></script>
+</html>
