@@ -6,7 +6,7 @@ Welcome to my Module3 DOM assignment. I had a lot of fun with this one because i
 
 > **Game Play**
 > + To play the game press the start button or space bar on the keyboard
-> + Then use the arrow keys to move the worm and grab some food
+> + Use the arrow keys to move the worm and grab some food
 > + On the left you can see your time in seconds
 > + On the right you can see your game score
 > + Below you can see your Highscore so Try to beat it!
@@ -16,11 +16,11 @@ Welcome to my Module3 DOM assignment. I had a lot of fun with this one because i
 
 + Clone this project and open up the [index.html](index.html) to view the page. 
 + All styles are in [styles.css](styles.css).
-+ All Javascript is in [app.js](app.js).  
++ All Javascript is in [app.js](app.js) with comments.  
 
 ## Live Demo
 
-Go to [The Worm Game](http://thewormgame.surge.sh/)) to view a live demo of the page\.  
+Go to [The Worm Game](http://thewormgame.surge.sh/) to view a live demo of the page\.  
 
 ## Resources
 

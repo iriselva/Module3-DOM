@@ -270,9 +270,3 @@ const moveWorm = () => {
     timeDisplay.textContent = count;
     clearInterval(gamePlayIntervalID);
  };
-
-
-
-
-
-
