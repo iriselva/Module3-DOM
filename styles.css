@@ -1,3 +1,55 @@
+/* loading screen + spinner */
+
+.loading-screen {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(24, 82, 90);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.spinner::before,
+.spinner:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.spinner:before {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(90deg, pink 0%,lightgreen 100% );
+    animation: spin .5s infinite linear;
+}
+.spinner:after {
+    width: 90%;
+    height: 90%;
+    background-color: rgb(24, 82, 90);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* gameboard */
+
 #wormboard {
     position: absolute;
     top: 50%;
@@ -19,13 +71,8 @@
       box-sizing: border-box;
 }
 
-html {
-      height: 100%;
-}
-
 body {
-    background: linear-gradient( rgb(47,150,163), rgb(164, 231, 164));
-    overflow: hidden;
+    background: rgb(47,150,163);
     height: 100%;
 }
 
@@ -38,7 +85,7 @@ header {
 }
 
 .worm-app {
-    height: 500px;
+    height: 440px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -87,7 +134,6 @@ h3 {
     font-size: 30px;
 }
 
-
 p {
     font-size: 14px;
 }
@@ -119,11 +165,9 @@ button {
     text-align: center;    
 }
 
+/* smaller screen */
+
 @media only screen and (max-width: 860px) {
-     body {
-        overflow: visible;
-        background: rgb(47,150,163);
-    }
 
     .worm-app {
         display: flex;

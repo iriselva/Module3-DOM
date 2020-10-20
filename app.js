@@ -1,3 +1,13 @@
+// loading screen from html
+let loadingScreen = document.querySelector('.loading-screen');
+
+// giving the loading screen seconds before removing itself
+setTimeout(function() {
+    loadingScreen.parentElement.removeChild(loadingScreen);
+}, 300000);
+
+
+
 // VARIABLES
 
 const boardBorder = 'black';
